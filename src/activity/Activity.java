@@ -1,7 +1,7 @@
 package activity;
 
 public abstract class Activity {
-    private int hours;
+    private final int hours;
     private int nbStudentsMax;
 
     public Activity(int hours, int nbStudentsMax){

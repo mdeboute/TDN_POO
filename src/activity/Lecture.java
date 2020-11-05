@@ -5,7 +5,6 @@ public class Lecture extends Activity {
         super(hours);
     }
 
-    @Override
     public int getCost(int nbStudents) {
         return super.getHours();
     }

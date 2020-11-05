@@ -1,10 +1,12 @@
 package course;
 
+import java.util.Arrays;
+
 public class Program {
-    private String title;
-    private int maxCost;
-    private int nbStudents;
-    private Course[] courses;
+    private final String title;
+    private final int maxCost;
+    private final int nbStudents;
+    private final Course[] courses;
     private int indexCourse = 0;
 
     public Program(String title, int maxCost, int nbStudents){
@@ -45,5 +47,16 @@ public class Program {
 
     public int getNbStudents() {
         return nbStudents;
+    }
+
+    @Override
+    public String toString() {
+        return "Program{" +
+                "title='" + title + '\'' +
+                ", maxCost=" + maxCost +
+                ", nbStudents=" + nbStudents +
+                ", courses=" + Arrays.toString(courses) +
+                ", indexCourse=" + indexCourse +
+                '}';
     }
 }

@@ -5,7 +5,6 @@ public class Lab extends Activity {
         super(hours, nbStudentsMax);
     }
 
-    @Override
     public int getCost(int nbStudents) {
         int nbGroupe = nbStudents/getNbStudentsMax()+1;
         return nbGroupe*getHours();

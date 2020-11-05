@@ -30,7 +30,7 @@ public class University{
             System.out.println("Making program for " + p.getTitle() + " (" + p.getMaxCost() + " hours for "
                     + p.getNbStudents() + " students)");
             for (Course c : courses) {
-                boolean added = false;
+                boolean added;
                 try {
                     added = p.addCourse(c);
                 }

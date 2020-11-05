@@ -30,6 +30,7 @@ public class Course {
         return title;
     }
 
+    @Override
     public String toString(){
         if (act2==null){
             return title + " : " + act1.toString();
